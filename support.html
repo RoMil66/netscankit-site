@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Utilities — Support</title>
+    <style>
+        :root { color-scheme: light dark; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                         "Helvetica Neue", sans-serif;
+            line-height: 1.6; color: #1d1d1f; background: #fff; padding: 40px 20px;
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1c1c1e; color: #f2f2f7; }
+            a { color: #0a84ff; }
+        }
+        .container { max-width: 680px; margin: 0 auto; }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        h2 { font-size: 20px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; }
+        h3 { font-size: 16px; font-weight: 600; margin-top: 20px; margin-bottom: 8px; }
+        p, li { font-size: 15px; margin-bottom: 12px; }
+        ul { padding-left: 20px; }
+        .meta { color: #86868b; font-size: 13px; margin-bottom: 32px; }
+        a { color: #0071e3; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lang-switch { text-align: right; margin-bottom: 20px; font-size: 14px; }
+        hr { border: none; border-top: 1px solid #d2d2d7; margin: 40px 0; }
+        .faq-q { font-weight: 600; margin-top: 16px; }
+        .faq-a { margin-bottom: 16px; }
+        .contact-box {
+            background: #f5f5f7; border-radius: 12px; padding: 20px; margin-top: 24px;
+        }
+        @media (prefers-color-scheme: dark) {
+            hr { border-color: #38383a; } .meta { color: #98989d; }
+            .contact-box { background: #2c2c2e; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="lang-switch"><a href="#english">English version below</a></div>
+
+    <h1>Support</h1>
+    <p class="meta">Network Utilities</p>
+
+    <div class="contact-box">
+        <h3>Kontakt</h3>
+        <p>Bei Fragen, Problemen oder Feedback:<br>
+        <a href="mailto:AppsByRoMil66@outlook.com">AppsByRoMil66@outlook.com</a></p>
+    </div>
+
+    <h2>Häufige Fragen</h2>
+
+    <p class="faq-q">Was kann Network Utilities?</p>
+    <p class="faq-a">Die App bietet 17 Netzwerk-Tools direkt auf Ihrem iPhone oder iPad: Ping, Traceroute, NSLookup, Reverse Lookup, DNS Records, Whois, Port Test (mit TLS-Zertifikatsanzeige), Port Scan, Subnet Scan, Wake-on-LAN, Ifconfig, Netstat, ARP, Hostname, WiFi Info, HTTP Headers und IP Geolocation.</p>
+
+    <p class="faq-q">Brauche ich ein Konto oder einen Server?</p>
+    <p class="faq-a">Nein. Alle Abfragen laufen direkt auf Ihrem Gerät. Es wird kein Account und kein externer Server benötigt.</p>
+
+    <p class="faq-q">Was bedeutet „Port geschlossen"?</p>
+    <p class="faq-a">Das bedeutet, dass der Ziel-Host auf diesem Port nicht antwortet. Entweder läuft dort kein Dienst, eine Firewall blockiert den Zugriff, oder der Host ist nicht erreichbar.</p>
+
+    <p class="faq-q">Warum zeigt Ping Millisekunden statt ICMP?</p>
+    <p class="faq-a">iOS erlaubt kein ICMP (klassisches Ping). Die App nutzt stattdessen TCP-Probes auf mehrere bekannte Ports (80, 443, 22, etc.) und misst die Antwortzeit. Das Ergebnis ist vergleichbar.</p>
+
+    <p class="faq-q">Was bedeutet der TLS-Zertifikat-Check beim Port Test?</p>
+    <p class="faq-a">Bei TLS-Ports (443, 993, etc.) baut die App eine verschlüsselte Verbindung auf und zeigt das Server-Zertifikat: Name, Aussteller, Gültigkeit, SANs, TLS-Version und Cipher Suite.</p>
+
+    <p class="faq-q">Warum fragt die App nach lokalem Netzwerk-Zugriff?</p>
+    <p class="faq-a">Für Subnet Scan, ARP und Wake-on-LAN muss die App Geräte in Ihrem lokalen Netzwerk erreichen können. iOS zeigt dafür eine Berechtigungsabfrage.</p>
+
+    <p class="faq-q">Werden meine Daten gespeichert oder gesendet?</p>
+    <p class="faq-a">Nein. Keine Eingaben, Ergebnisse oder Nutzungsdaten werden gespeichert oder an Dritte gesendet. Einzige Ausnahme: Das IP-Geolocation-Tool nutzt den öffentlichen Dienst ip-api.com.</p>
+
+    <hr id="english">
+
+    <h1>Support</h1>
+    <p class="meta">Network Utilities</p>
+
+    <div class="contact-box">
+        <h3>Contact</h3>
+        <p>For questions, issues, or feedback:<br>
+        <a href="mailto:AppsByRoMil66@outlook.com">AppsByRoMil66@outlook.com</a></p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <p class="faq-q">What can Network Utilities do?</p>
+    <p class="faq-a">The app provides 17 network tools right on your iPhone or iPad: Ping, Traceroute, NSLookup, Reverse Lookup, DNS Records, Whois, Port Test (with TLS certificate display), Port Scan, Subnet Scan, Wake-on-LAN, Ifconfig, Netstat, ARP, Hostname, WiFi Info, HTTP Headers, and IP Geolocation.</p>
+
+    <p class="faq-q">Do I need an account or a server?</p>
+    <p class="faq-a">No. All queries run directly on your device. No account or external server is required.</p>
+
+    <p class="faq-q">What does "port closed" mean?</p>
+    <p class="faq-a">It means the target host did not respond on that port. Either no service is running there, a firewall is blocking access, or the host is unreachable.</p>
+
+    <p class="faq-q">Why does Ping show milliseconds instead of ICMP?</p>
+    <p class="faq-a">iOS does not allow ICMP (classic ping). The app uses TCP probes to multiple well-known ports (80, 443, 22, etc.) and measures response time. The result is comparable.</p>
+
+    <p class="faq-q">What does the TLS certificate check do in Port Test?</p>
+    <p class="faq-a">For TLS ports (443, 993, etc.), the app establishes an encrypted connection and displays the server certificate: name, issuer, validity, SANs, TLS version, and cipher suite.</p>
+
+    <p class="faq-q">Why does the app ask for local network access?</p>
+    <p class="faq-a">For Subnet Scan, ARP, and Wake-on-LAN, the app needs to reach devices on your local network. iOS shows a permission prompt for this.</p>
+
+    <p class="faq-q">Is any of my data stored or sent?</p>
+    <p class="faq-a">No. No inputs, results, or usage data are stored or sent to third parties. The only exception: The IP Geolocation tool uses the public service ip-api.com.</p>
+</div>
+</body>
+</html>
